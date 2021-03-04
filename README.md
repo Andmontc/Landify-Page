@@ -32,3 +32,4 @@ This project consists of creating a landing page in HTML, CSS and Javascript bas
 | Oscar Andres Montes | [Andmontc](https://github.com/andmontc) | [@damstyx](https://twitter.com/damstyx) | [andmontc](https://www.linkedin.com/in/andmontc) |
 
 ##### March, 2021. Colombia
+

@@ -68,6 +68,12 @@ button {
   border: none;
 }
 
+@media (max-width: 576px) {
+  .hidden {
+    display: none;
+  }
+}
+
 .header {
   width: 100%;
   background-color: #FFFFFF;
@@ -202,6 +208,7 @@ button {
     display: flex;
     flex-basis: 100%;
     padding-top: 50px;
+    justify-content: space-evenly;
   }
 }
 .header__sticky {
@@ -227,7 +234,7 @@ button {
 @media (max-width: 576px) {
   .landing__container {
     padding-left: 15px;
-    height: 25rem;
+    height: 18.75rem;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
@@ -321,9 +328,102 @@ button {
     display: none;
   }
 }
+
+.logos__container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 4rem 5rem 4rem 10.3125rem;
+  height: 19.25rem;
+}
 @media (max-width: 576px) {
-  .landing__hidden {
-    display: none;
+  .logos__container {
+    padding: 0 0 0 15px;
+    height: 15.625rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .logos__container {
+    padding: 0;
+  }
+}
+.logos__container-text {
+  flex-basis: 40%;
+  padding-left: 6.25rem;
+  margin: auto;
+}
+@media (max-width: 576px) {
+  .logos__container-text {
+    padding: 0 0 0 10px;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .logos__container-text {
+    padding: 0 10.375rem 0 4.375rem;
+  }
+}
+.logos__container-text h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+@media (max-width: 576px) {
+  .logos__container-text h2 {
+    font-size: 28px;
+  }
+}
+.logos__container-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+@media (max-width: 576px) {
+  .logos__container-text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.logos__container-companies {
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+  padding-left: 6.25rem;
+}
+@media (max-width: 576px) {
+  .logos__container-companies {
+    padding: 0;
+    justify-content: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .logos__container-companies {
+    padding-left: 4.375rem;
+  }
+}
+.logos__container-companies .svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 90px;
+  border: none;
+  border-radius: 16px;
+  padding: 0 30px 0 30px;
+}
+@media (max-width: 576px) {
+  .logos__container-companies .svg {
+    height: 2.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .logos__container-companies .svg {
+    height: 3.75rem;
+    width: 7.5rem;
+    padding: 0;
   }
 }
 

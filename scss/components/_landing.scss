@@ -6,7 +6,7 @@
 
     @include display(phone) {
       padding-left: 15px;
-      height: rem(400);
+      height: rem(300);
     }
 
     @include display(tablet) {
@@ -100,12 +100,6 @@
       @include display(phone) {
         display: none;
       }
-    }
-  }
-
-  &__hidden {
-    @include display(phone) {
-      display: none;
     }
   }
 }

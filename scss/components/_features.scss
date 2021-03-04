@@ -1,0 +1,12 @@
+.features {
+  &__container {
+    display: flex;
+    height: rem(960);
+
+    h2 {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 64px;
+    }
+  }
+}

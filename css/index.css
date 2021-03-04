@@ -427,4 +427,14 @@ button {
   }
 }
 
+.features__container {
+  display: flex;
+  height: 60rem;
+}
+.features__container h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -2,6 +2,7 @@ const $menu = document.querySelector('.js-header-menu');
 const $head = document.querySelector('.js-header');
 const $landing = document.querySelector('.js-landing');
 const $logo = document.querySelector('.js-logos');
+const $feat = document.querySelector('.js-features');
 const sticky = $head.offsetTop;
 
 window.onscroll = handleStickyScroll
@@ -11,6 +12,7 @@ $menu.addEventListener('click', () => {
   header.classList.toggle('header__active');
   $landing.classList.toggle('hidden');
   $logo.classList.toggle('hidden');
+  $feat.classList.toggle('hidden');
 })
 
 function handleStickyScroll () {

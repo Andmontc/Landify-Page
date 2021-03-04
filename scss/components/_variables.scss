@@ -1,0 +1,19 @@
+$font-primary: #18191F;
+$main-background: #8C30F5;
+$secondary-background: #2EC5CE;
+$secondary-color: #D6B1FF;
+$button-secondary: #F1E4FF;
+$white: #FFFFFF;
+$black: #0B0D17;
+
+@mixin display($size) {
+  @if $size == phone {
+    @media (max-width: 576px) { @content; }
+  } @else if $size == tablet {
+    @media (min-width: 577px) and (max-width: 1024px) { @content; }
+  }
+}
+
+@function rem($value: 2rem) {
+  @return ($value / 16 * 1rem);
+}

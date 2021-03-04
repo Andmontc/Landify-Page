@@ -21,7 +21,6 @@ This project consists of creating a landing page in HTML, CSS and Javascript bas
 * Check [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * And of course, that the page looks faithful to the design.
 
-
 ## Work flow
 * Create draft of figma design on your account.
 * All in English (branches, commits, code)

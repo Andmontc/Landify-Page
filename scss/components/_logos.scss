@@ -24,10 +24,9 @@
 
       @include display(phone) {
         margin: 0;
-        flex-basis: 50%;
+        flex-basis: 70%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
       }
 
       @include display (tablet) {

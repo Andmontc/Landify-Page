@@ -16,6 +16,11 @@
       flex-wrap: wrap;
       padding: 26px;
     }
+
+    @include display (tablet) {
+      max-width: 768px;
+      margin: 0;
+    }
   }
 
   &__menu {
@@ -162,7 +167,7 @@
   &__sticky {
     position: sticky;
     max-width: rem(1200);
-    top: 1rem;
+    top: 0;
     transition: all .8s ease;
     width: 100%;
   }

@@ -1,29 +1,36 @@
 .landing {
+  max-width: rem(1200);
+  margin: auto;
+
+  @include display (phone) {
+    max-width: rem(300);
+    margin: 50px auto;
+  }
+
+  @include display (tablet) {
+    margin: 0px;
+  }
+
   &__container {
     display: flex;
-    max-width: rem(1200);
-    margin: auto;
-    padding-left: 7.5rem;
+    margin-left: 7rem;
     align-items: center;
     height: rem(794);
 
     @include display(phone) {
-      padding-left: 15px;
-      height: rem(300);
+      display: flex;
+      align-items: flex-end;
+      margin: auto;
+      height: rem(240);
     }
 
     @include display(tablet) {
-      padding-left: 51px;
+      margin: auto 10px;
     }
   }
 
   &__text {
-    display: flex;
     flex-wrap: wrap;
-
-    @include display(phone) {
-      margin-left: 0;
-    }
 
     @include display(tablet) {
       margin-left: 0;
@@ -74,14 +81,18 @@
     display: flex;
     align-items: center;
 
+    @include display (phone) {
+      width: 100%;
+    }
+
     svg {
       padding-left: 2rem;
       z-index: -2;
 
       @include display(phone) {
-        height: 320px;
-        margin-bottom: 110px;
-        padding-left: 10px;
+        height: rem(336);
+        margin-bottom: 2.1rem;
+        padding-left: 0px;
         width: 100%;
       }
 

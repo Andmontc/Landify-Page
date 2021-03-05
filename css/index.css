@@ -104,6 +104,12 @@ button {
     padding: 26px;
   }
 }
+@media (min-width: 577px) and (max-width: 1024px) {
+  .header__container {
+    max-width: 768px;
+    margin: 0;
+  }
+}
 .header__menu {
   display: none;
 }
@@ -227,7 +233,7 @@ button {
 .header__sticky {
   position: sticky;
   max-width: 75rem;
-  top: 1rem;
+  top: 0;
   transition: all 0.8s ease;
   width: 100%;
 }
@@ -240,33 +246,42 @@ button {
   }
 }
 
-.landing__container {
-  display: flex;
+.landing {
   max-width: 75rem;
   margin: auto;
-  padding-left: 7.5rem;
+}
+@media (max-width: 576px) {
+  .landing {
+    max-width: 18.75rem;
+    margin: 50px auto;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .landing {
+    margin: 0px;
+  }
+}
+.landing__container {
+  display: flex;
+  margin-left: 7rem;
   align-items: center;
   height: 49.625rem;
 }
 @media (max-width: 576px) {
   .landing__container {
-    padding-left: 15px;
-    height: 18.75rem;
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+    height: 15rem;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .landing__container {
-    padding-left: 51px;
+    margin: auto 10px;
   }
 }
 .landing__text {
-  display: flex;
   flex-wrap: wrap;
-}
-@media (max-width: 576px) {
-  .landing__text {
-    margin-left: 0;
-  }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .landing__text {
@@ -317,15 +332,20 @@ button {
   display: flex;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .landing__img {
+    width: 100%;
+  }
+}
 .landing__img svg {
   padding-left: 2rem;
   z-index: -2;
 }
 @media (max-width: 576px) {
   .landing__img svg {
-    height: 320px;
-    margin-bottom: 110px;
-    padding-left: 10px;
+    height: 21rem;
+    margin-bottom: 2.1rem;
+    padding-left: 0px;
     width: 100%;
   }
 }
@@ -353,42 +373,46 @@ button {
   }
 }
 
+.logos {
+  max-width: 75rem;
+  margin: auto;
+}
+@media (max-width: 576px) {
+  .logos {
+    max-width: 18.75rem;
+    margin: 50px auto;
+  }
+}
 .logos__container {
   display: flex;
   align-items: center;
-  max-width: 75rem;
-  margin: 0 0 0 15rem;
+  width: 60rem;
+  margin: auto;
   height: 19.25rem;
 }
 @media (max-width: 576px) {
   .logos__container {
-    margin: 0;
-    padding: 15px;
-    height: 7.5rem;
+    height: 5.625rem;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container {
-    display: flex;
-    margin: auto;
-    justify-content: flex-end;
+    margin-left: 10px;
   }
-}
-.logos__container-text {
-  flex-basis: 30%;
 }
 @media (max-width: 576px) {
   .logos__container-text {
-    margin: 0;
-    flex-basis: 70%;
-    display: flex;
+    flex-basis: 18%;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-left: 8px;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container-text {
     margin: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .logos__container-text h2 {
@@ -414,18 +438,19 @@ button {
 }
 .logos__container-companies {
   display: flex;
-  flex-basis: 60%;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 @media (max-width: 576px) {
   .logos__container-companies {
-    margin-top: 20px;
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container-companies {
-    margin: 0;
+    flex-basis: 50%;
+    justify-content: center;
   }
 }
 .logos__container-companies .svg {
@@ -454,12 +479,14 @@ button {
   }
 }
 
+.features {
+  max-width: 75rem;
+}
 .features__container {
   display: flex;
   height: 60rem;
-  max-width: 75rem;
-  margin: auto;
-  padding-left: 7.5rem;
+  width: 60rem;
+  margin: 0 0 0 auto;
 }
 @media (max-width: 576px) {
   .features__container {
@@ -468,7 +495,7 @@ button {
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .features__container {
-    padding-left: 5rem;
+    margin-left: 10px;
   }
 }
 .features__container h2 {

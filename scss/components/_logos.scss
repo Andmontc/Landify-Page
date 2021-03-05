@@ -1,37 +1,40 @@
 .logos {
+  max-width: rem(1200);
+  margin: auto;
+
+  @include display (phone) {
+    max-width: 18.75rem;
+    margin: 50px auto;
+  }
 
   &__container {
     display: flex;
     align-items: center;
-    max-width: rem(1200);
-    margin: 0 0 0 15rem;
+    width: rem(960);
+    margin: auto;
     height: rem(308);
 
     @include display(phone) {
-      margin: 0;
-      padding: 15px;
-      height: rem(120);
+      height: rem(90);
     }
 
     @include display (tablet) {
-      display: flex;
-      margin: auto;
-      justify-content: flex-end;
+      margin-left: 10px;
     }
 
     &-text {
-      flex-basis: 30%;
 
       @include display(phone) {
-        margin: 0;
-        flex-basis: 70%;
-        display: flex;
+        flex-basis: 18%;
         flex-wrap: wrap;
-        padding-top: 20px;
+        padding-left: 8px;
       }
 
       @include display (tablet) {
         margin: 0;
+        flex-basis: 30%;
+        display: flex;
+        flex-wrap: wrap;
       }
 
       h2 {
@@ -58,16 +61,17 @@
 
     &-companies {
       display: flex;
-      flex-basis: 60%;
       flex-wrap: wrap;
+      justify-content: flex-end;
 
       @include display(phone) {
-        margin-top: 20px;
-        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
       }
 
       @include display (tablet) {
-        margin: 0;
+        flex-basis: 50%;
+        justify-content: center;
       }
 
       .svg {

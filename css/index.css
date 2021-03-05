@@ -225,8 +225,11 @@ button {
   }
 }
 .header__sticky {
-  position: fixed;
+  position: sticky;
+  max-width: 75rem;
+  top: 0;
   transition: all 0.8s ease;
+  width: 100%;
 }
 .header hr {
   opacity: 0.3;

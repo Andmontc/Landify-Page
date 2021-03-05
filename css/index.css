@@ -413,7 +413,7 @@ button {
 @media (max-width: 576px) {
   .logos__container-companies {
     margin-top: 20px;
-    padding: 20px;
+    padding-left: 30px;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {

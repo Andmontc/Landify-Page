@@ -369,10 +369,9 @@ button {
 @media (max-width: 576px) {
   .logos__container-text {
     margin: 0;
-    flex-basis: 50%;
+    flex-basis: 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {

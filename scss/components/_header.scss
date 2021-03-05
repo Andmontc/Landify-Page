@@ -160,8 +160,10 @@
   }
 
   &__sticky {
-    position: fixed;
+    position: sticky;
+    top: 0;
     transition: all .8s ease;
+    width: 100%;
   }
 
   hr {

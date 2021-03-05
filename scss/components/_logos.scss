@@ -27,6 +27,7 @@
         flex-basis: 70%;
         display: flex;
         flex-wrap: wrap;
+        padding-top: 20px;
       }
 
       @include display (tablet) {

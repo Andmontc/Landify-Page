@@ -382,6 +382,7 @@ button {
     flex-basis: 70%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {

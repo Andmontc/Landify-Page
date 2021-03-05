@@ -1,6 +1,9 @@
 .landing {
   &__container {
     display: flex;
+    max-width: rem(1200);
+    margin: auto;
+    padding-left: 7.5rem;
     align-items: center;
     height: rem(794);
 
@@ -10,16 +13,13 @@
     }
 
     @include display(tablet) {
-      width: 100%;
-      margin-left: rem(70);
+      padding-left: 51px;
     }
   }
 
   &__text {
     display: flex;
-    flex-basis: 50%;
     flex-wrap: wrap;
-    margin-left: rem(260);
 
     @include display(phone) {
       margin-left: 0;
@@ -31,7 +31,7 @@
 
     h1 {
       font-weight: 800;
-      font-size: 72px;
+      font-size: 66px;
       line-height: 98px;
 
       @include display(phone) {
@@ -41,7 +41,7 @@
     }
 
     p {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 18px;
       line-height: 32px;
 
@@ -73,31 +73,36 @@
   &__img {
     display: flex;
     align-items: center;
-    flex-basis: 50%;
 
     svg {
+      padding-left: 2rem;
       z-index: -2;
-    }
 
-    @include display(phone) {
-      svg {
+      @include display(phone) {
         height: 320px;
         margin-bottom: 110px;
         padding-left: 10px;
         width: 100%;
       }
 
+      @include display(tablet) {
+        width: 100%;
+      }
     }
 
     img {
       position: absolute;
-      padding-left: 110px;
+      padding-left: rem(125);
       padding-top: 20px;
       border-radius: 8px;
       filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
       z-index: -1;
 
       @include display(phone) {
+        display: none;
+      }
+
+      @include display(tablet) {
         display: none;
       }
     }

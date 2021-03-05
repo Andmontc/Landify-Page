@@ -2,11 +2,27 @@
   &__container {
     display: flex;
     height: rem(960);
+    max-width: rem(1200);
+    margin: auto;
+    padding-left: rem(120);
+
+    @include display (phone) {
+      padding-left: rem(20);
+    }
+
+    @include display (tablet) {
+      padding-left: rem(80);
+    }
 
     h2 {
       font-weight: 800;
       font-size: 48px;
       line-height: 64px;
+
+      @include display(phone) {
+        font-size: 35px;
+        padding: 50px 0;
+      }
     }
   }
 }

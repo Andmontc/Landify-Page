@@ -75,13 +75,16 @@ button {
 }
 
 .header {
+  margin: auto;
   width: 100%;
   background-color: #FFFFFF;
 }
 .header__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  max-width: 1200px;
+  margin: auto;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -228,6 +231,9 @@ button {
 
 .landing__container {
   display: flex;
+  max-width: 75rem;
+  margin: auto;
+  padding-left: 7.5rem;
   align-items: center;
   height: 49.625rem;
 }
@@ -239,15 +245,12 @@ button {
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .landing__container {
-    width: 100%;
-    margin-left: 4.375rem;
+    padding-left: 51px;
   }
 }
 .landing__text {
   display: flex;
-  flex-basis: 50%;
   flex-wrap: wrap;
-  margin-left: 16.25rem;
 }
 @media (max-width: 576px) {
   .landing__text {
@@ -261,7 +264,7 @@ button {
 }
 .landing__text h1 {
   font-weight: 800;
-  font-size: 72px;
+  font-size: 66px;
   line-height: 98px;
 }
 @media (max-width: 576px) {
@@ -271,7 +274,7 @@ button {
   }
 }
 .landing__text p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 32px;
 }
@@ -302,9 +305,9 @@ button {
 .landing__img {
   display: flex;
   align-items: center;
-  flex-basis: 50%;
 }
 .landing__img svg {
+  padding-left: 2rem;
   z-index: -2;
 }
 @media (max-width: 576px) {
@@ -315,9 +318,14 @@ button {
     width: 100%;
   }
 }
+@media (min-width: 577px) and (max-width: 1024px) {
+  .landing__img svg {
+    width: 100%;
+  }
+}
 .landing__img img {
   position: absolute;
-  padding-left: 110px;
+  padding-left: 7.8125rem;
   padding-top: 20px;
   border-radius: 8px;
   filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
@@ -328,33 +336,39 @@ button {
     display: none;
   }
 }
+@media (min-width: 577px) and (max-width: 1024px) {
+  .landing__img img {
+    display: none;
+  }
+}
 
 .logos__container {
   display: flex;
   align-items: center;
-  margin: auto;
-  padding: 4rem 5rem 4rem 10.3125rem;
+  max-width: 75rem;
+  margin: 0 0 0 15rem;
   height: 19.25rem;
 }
 @media (max-width: 576px) {
   .logos__container {
-    padding: 0 0 0 15px;
+    margin: 0;
+    padding: 15px;
     height: 15.625rem;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container {
-    padding: 0;
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
   }
 }
 .logos__container-text {
-  flex-basis: 40%;
-  padding-left: 6.25rem;
-  margin: auto;
+  flex-basis: 30%;
 }
 @media (max-width: 576px) {
   .logos__container-text {
-    padding: 0 0 0 10px;
+    margin: 0;
     flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -363,7 +377,7 @@ button {
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container-text {
-    padding: 0 10.375rem 0 4.375rem;
+    margin: 0;
   }
 }
 .logos__container-text h2 {
@@ -377,7 +391,7 @@ button {
   }
 }
 .logos__container-text p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 32px;
 }
@@ -389,19 +403,18 @@ button {
 }
 .logos__container-companies {
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 60%;
   flex-wrap: wrap;
-  padding-left: 6.25rem;
 }
 @media (max-width: 576px) {
   .logos__container-companies {
-    padding: 0;
-    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container-companies {
-    padding-left: 4.375rem;
+    margin: 0;
   }
 }
 .logos__container-companies .svg {
@@ -422,7 +435,7 @@ button {
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container-companies .svg {
     height: 3.75rem;
-    width: 7.5rem;
+    width: 8.75rem;
     padding: 0;
   }
 }
@@ -430,11 +443,30 @@ button {
 .features__container {
   display: flex;
   height: 60rem;
+  max-width: 75rem;
+  margin: auto;
+  padding-left: 7.5rem;
+}
+@media (max-width: 576px) {
+  .features__container {
+    padding-left: 1.25rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .features__container {
+    padding-left: 5rem;
+  }
 }
 .features__container h2 {
   font-weight: 800;
   font-size: 48px;
   line-height: 64px;
+}
+@media (max-width: 576px) {
+  .features__container h2 {
+    font-size: 35px;
+    padding: 50px 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

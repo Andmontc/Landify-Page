@@ -227,7 +227,7 @@ button {
 .header__sticky {
   position: sticky;
   max-width: 75rem;
-  top: 0;
+  top: 1rem;
   transition: all 0.8s ease;
   width: 100%;
 }

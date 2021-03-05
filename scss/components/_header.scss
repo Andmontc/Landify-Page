@@ -162,7 +162,7 @@
   &__sticky {
     position: sticky;
     max-width: rem(1200);
-    top: 0;
+    top: 1rem;
     transition: all .8s ease;
     width: 100%;
   }

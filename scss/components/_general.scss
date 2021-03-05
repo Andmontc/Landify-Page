@@ -16,6 +16,10 @@ body {
   @include display(phone) {
     max-width: rem(320);
   }
+
+  @include display (tablet) {
+    max-width: rem(1024);
+  }
 }
 
 button {

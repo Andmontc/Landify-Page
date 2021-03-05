@@ -67,6 +67,11 @@ body {
     max-width: 20rem;
   }
 }
+@media (min-width: 577px) and (max-width: 1024px) {
+  .container {
+    max-width: 64rem;
+  }
+}
 
 button {
   border-radius: 8px;

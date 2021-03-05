@@ -10,7 +10,7 @@
     @include display(phone) {
       margin: 0;
       padding: 15px;
-      height: rem(250);
+      height: rem(120);
     }
 
     @include display (tablet) {
@@ -80,7 +80,11 @@
         padding: 0 30px 0 30px;
 
         @include display(phone) {
-          height: rem(40);
+          &--none {
+            display: none;
+          }
+
+          height: rem(50);
         }
 
         @include display(tablet) {

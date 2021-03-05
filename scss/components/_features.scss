@@ -7,7 +7,7 @@
     padding-left: rem(120);
 
     @include display (phone) {
-      padding-left: rem(20);
+      padding-left: rem(15);
     }
 
     @include display (tablet) {

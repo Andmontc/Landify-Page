@@ -12,14 +12,6 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-
-  @include display(phone) {
-    max-width: rem(320);
-  }
-
-  @include display (tablet) {
-    max-width: rem(1024);
-  }
 }
 
 button {

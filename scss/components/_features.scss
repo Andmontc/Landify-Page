@@ -8,11 +8,14 @@
     margin: 0 0 0 auto;
 
     @include display (phone) {
-      padding-left: rem(15);
+      width: auto;
+      display: flex;
+      justify-content: center;
     }
 
     @include display (tablet) {
-      margin-left: 10px;
+      margin: 40px;
+      width: auto;
     }
 
     h2 {
@@ -20,7 +23,7 @@
       font-size: 48px;
       line-height: 64px;
 
-      @include display(phone) {
+      @include display (phone) {
         font-size: 35px;
         padding: 50px 0;
       }

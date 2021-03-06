@@ -2,11 +2,6 @@
   max-width: rem(1200);
   margin: auto;
 
-  @include display (phone) {
-    max-width: 18.75rem;
-    margin: 50px auto;
-  }
-
   &__container {
     display: flex;
     align-items: center;
@@ -14,20 +9,19 @@
     margin: auto;
     height: rem(308);
 
-    @include display(phone) {
-      height: rem(90);
+    @include display (phone) {
+      width: auto;
     }
 
     @include display (tablet) {
-      margin-left: 10px;
+      display: flex;
+      justify-content: space-around;
+      width: auto;
     }
 
     &-text {
-
       @include display(phone) {
-        flex-basis: 18%;
-        flex-wrap: wrap;
-        padding-left: 8px;
+        padding-left: 23px;
       }
 
       @include display (tablet) {
@@ -42,17 +36,17 @@
         font-size: 48px;
         line-height: 64px;
 
-        @include display(phone) {
+        @include display (phone) {
           font-size: 28px;
         }
       }
 
       p {
         font-weight: 300;
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 17px;
+        line-height: 30px;
 
-        @include display(phone) {
+        @include display (phone) {
           font-size: 18px;
           line-height: 30px
         }
@@ -63,11 +57,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-
-      @include display(phone) {
-        display: flex;
-        flex-direction: column;
-      }
 
       @include display (tablet) {
         flex-basis: 50%;
@@ -90,12 +79,6 @@
           }
 
           height: rem(50);
-        }
-
-        @include display(tablet) {
-          height: rem(60);
-          width: rem(140);
-          padding: 0;
         }
       }
     }

@@ -1,6 +1,5 @@
 .header {
   margin: auto;
-  width: 100%;
   background-color: $white;
 
   &__container {
@@ -15,11 +14,6 @@
     @include display(phone) {
       flex-wrap: wrap;
       padding: 26px;
-    }
-
-    @include display (tablet) {
-      max-width: 768px;
-      margin: 0;
     }
   }
 
@@ -166,17 +160,10 @@
 
   &__sticky {
     position: sticky;
-    max-width: rem(1200);
     top: 0;
-    transition: all .8s ease;
-    width: 100%;
   }
 
   hr {
     opacity: 0.3;
-
-    @include display(phone) {
-      display: none;
-    }
   }
 }

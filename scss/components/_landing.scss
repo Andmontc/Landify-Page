@@ -9,7 +9,7 @@
     height: rem(794);
 
     @include display(phone) {
-      height: rem(250);
+      height: rem(280);
       margin: auto;
     }
 
@@ -47,9 +47,8 @@
       line-height: 32px;
 
       @include display(phone) {
-        font-size: 12px;
         line-height: 20px;
-        padding-top: 10px;
+        padding: 10px 45px;
         text-align: center;
       }
     }

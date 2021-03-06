@@ -233,7 +233,7 @@ button {
 }
 @media (max-width: 576px) {
   .landing__container {
-    height: 15.625rem;
+    height: 17.5rem;
     margin: auto;
   }
 }
@@ -274,9 +274,8 @@ button {
 }
 @media (max-width: 576px) {
   .landing__text p {
-    font-size: 12px;
     line-height: 20px;
-    padding-top: 10px;
+    padding: 10px 45px;
     text-align: center;
   }
 }
@@ -431,8 +430,7 @@ button {
 @media (max-width: 576px) {
   .features__container {
     width: auto;
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
@@ -449,7 +447,96 @@ button {
 @media (max-width: 576px) {
   .features__container h2 {
     font-size: 35px;
-    padding: 50px 0;
+  }
+}
+.features__container img {
+  margin-top: 10.625rem;
+}
+@media (max-width: 576px) {
+  .features__container img {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .features__container img {
+    display: none;
+  }
+}
+.features__headlines {
+  display: flex;
+  align-items: center;
+  margin-top: 10.625rem;
+  margin-right: 6rem;
+  padding-right: 2rem;
+  width: 33.625rem;
+  height: 32rem;
+}
+@media (max-width: 576px) {
+  .features__headlines {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .features__headlines {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+.features__texts {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+}
+.features__texts-headlines {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .features__texts-headlines {
+    flex-direction: column;
+  }
+}
+.features__texts-headlines img {
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .features__texts-headlines img {
+    display: flex;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .features__texts-headlines img {
+    display: flex;
+  }
+}
+.features__texts-headlines .text {
+  padding-left: 70px;
+}
+@media (max-width: 576px) {
+  .features__texts-headlines .text {
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+.features__texts-headlines .text h5 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.features__texts-headlines .text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+@media (max-width: 576px) {
+  .features__texts-headlines .text p {
+    text-align: center;
   }
 }
 

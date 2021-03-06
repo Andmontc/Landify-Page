@@ -9,8 +9,7 @@
 
     @include display (phone) {
       width: auto;
-      display: flex;
-      justify-content: center;
+      text-align: center;
     }
 
     @include display (tablet) {
@@ -25,7 +24,95 @@
 
       @include display (phone) {
         font-size: 35px;
-        padding: 50px 0;
+      }
+    }
+
+    img {
+      margin-top: 10.625rem;
+
+      @include display (phone) {
+        display: none;
+      }
+
+      @include display (tablet-mini) {
+        display: none;
+      }
+    }
+  }
+
+  &__headlines {
+    display: flex;
+    align-items: center;
+    margin-top: rem(170);
+    margin-right: 6rem;
+    padding-right: 2rem;
+    width: rem(538);
+    height: rem(512);
+
+    @include display (phone) {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    @include display (tablet-mini) {
+      margin: 0;
+      padding: 0;
+      width: auto;
+    }
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+
+    &-headlines {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      @include display (phone) {
+        flex-direction: column;
+      }
+
+      img {
+        margin: 0;
+
+        @include display (phone) {
+          display: flex;
+        }
+
+        @include display (tablet-mini) {
+          display: flex;
+        }
+      }
+
+      .text {
+        padding-left: 70px;
+
+        @include display (phone) {
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 10px;
+        }
+
+        h5 {
+          font-weight: 600;
+          font-size: 24px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+
+          @include display (phone) {
+            text-align: center;
+          }
+        }
       }
     }
   }

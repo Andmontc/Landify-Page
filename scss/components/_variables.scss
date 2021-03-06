@@ -11,8 +11,6 @@ $black: #0B0D17;
     @media (max-width: 576px) { @content; }
   } @else if $size == tablet {
     @media (min-width: 577px) and (max-width: 1024px) { @content; }
-  } @else if $size == tablet-mini {
-    @media (min-width: 577px) and (max-width: 768px) { @content; }
   }
 }
 

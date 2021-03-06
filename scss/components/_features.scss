@@ -34,7 +34,7 @@
         display: none;
       }
 
-      @include display (tablet-mini) {
+      @include display (tablet) {
         display: none;
       }
     }
@@ -55,7 +55,7 @@
       padding: 0;
     }
 
-    @include display (tablet-mini) {
+    @include display (tablet) {
       margin: 0;
       padding: 0;
       width: auto;
@@ -84,7 +84,7 @@
           display: flex;
         }
 
-        @include display (tablet-mini) {
+        @include display (tablet) {
           display: flex;
         }
       }

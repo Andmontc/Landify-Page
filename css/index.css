@@ -457,7 +457,7 @@ button {
     display: none;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .features__container img {
     display: none;
   }
@@ -478,7 +478,7 @@ button {
     padding: 0;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .features__headlines {
     margin: 0;
     padding: 0;
@@ -509,7 +509,7 @@ button {
     display: flex;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .features__texts-headlines img {
     display: flex;
   }

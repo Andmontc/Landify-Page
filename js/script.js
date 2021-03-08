@@ -6,6 +6,7 @@ const $feat = document.querySelector('.js-features');
 const $line = document.querySelector('.js-hr');
 const $client = document.querySelector('.js-clients');
 const $stats = document.querySelector('.js-statistics');
+const $hline = document.querySelector('.js-headline');
 const sticky = $head.offsetTop;
 
 window.onscroll = handleStickyScroll
@@ -18,6 +19,7 @@ $menu.addEventListener('click', () => {
   $feat.classList.toggle('hidden');
   $line.classList.toggle('hidden');
   $stats.classList.toggle('hidden');
+  $hline.classList.toggle('hidden-client');
   $client.classList.toggle('hidden-client');
 })
 

@@ -1,0 +1,79 @@
+.headline {
+  display: flex;
+  height: rem(800);
+  align-items: center;
+  justify-content: center;
+
+  @include display (phone) {
+    height: rem(500);
+  }
+
+  @include display (tablet) {
+    height: rem(500);
+  }
+
+  &__container {
+    display: flex;
+    width: rem(1110);
+    height: rem(388);
+    align-items: center;
+    border-radius: 16px;
+    background-color: $main-background;
+
+    @include display (tablet) {
+      justify-content: center;
+    }
+
+    &-info {
+      width: rem(444);
+      height: rem(308);
+      margin-left: 48px;
+      margin-right: 150px;
+
+      @include display (phone) {
+        width: auto;
+        margin: auto 10px;
+      }
+
+      @include display (tablet) {
+        margin: 0;
+      }
+
+      h3 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 54px;
+        margin-bottom: 32px;
+        color: $white;
+      }
+
+      p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 32px;
+        color: $white;
+      }
+
+      a{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        text-decoration: none;
+        color: $white;
+      }
+    }
+
+    &-phone {
+      height: rem(644);
+
+      @include display (phone) {
+        display: none;
+      }
+
+      @include display (tablet) {
+        display: none;
+      }
+    }
+  }
+}

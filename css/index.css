@@ -738,7 +738,7 @@ button {
 }
 @media (max-width: 576px) {
   .clients__testimonials p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1;
   }
 }
@@ -821,7 +821,7 @@ button {
 }
 @media (max-width: 576px) {
   .statistics__data {
-    width: auto;
+    width: 11.25rem;
   }
   .statistics__data:nth-child(3) {
     order: 4;

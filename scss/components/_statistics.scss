@@ -26,7 +26,7 @@
     border-bottom: 2px solid black;
 
     @include display (phone) {
-      width: auto;
+      width: rem(180);
 
       &:nth-child(3) {
         order: 4;

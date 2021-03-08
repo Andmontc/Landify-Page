@@ -1,0 +1,159 @@
+.clients {
+  display: flex;
+  height: rem(610);
+  justify-content: flex-end;
+  background-color: $main-background;
+
+  @include display (phone) {
+    height: rem(510);
+  }
+
+  @include display (tablet) {
+    height: rem(600);
+    width: auto;
+  }
+
+  .quote {
+    position: absolute;
+    opacity: 0.15;
+    padding-top: rem(48);
+    padding-right: rem(112);
+
+    @include display (phone) {
+      display: none;
+    }
+
+    @include display (tablet) {
+      display: none;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    width: rem(1200);
+    height: rem(316);
+  }
+
+  &__text {
+    width: rem(730);
+    height: rem(64);
+    margin: 0px 0px 30px 120px;
+
+    @include display (phone) {
+      margin: auto;
+      width: auto;
+    }
+
+    @include display (tablet) {
+      margin: auto;
+      width: auto;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 64px;
+      color: $white;
+
+      @include display (phone) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__testimonials {
+    display: flex;
+    width: rem(1050);
+    height: rem(210);
+    margin: 0 34px 0 auto;
+
+    @include display (phone) {
+      width: auto;
+      margin: auto 20px;
+    }
+
+    @include display (tablet) {
+      margin: 0;
+      width: auto;
+    }
+
+    h6 {
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      padding: 8px;
+
+      @include display (phone) {
+        font-size: 20px;
+      }
+
+      @include display (tablet) {
+        font-size: 15px;
+        padding: 0;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      padding: 10px;
+
+      @include display (phone) {
+        font-size: 9px;
+        line-height: 2;
+      }
+
+      @include display (tablet) {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+  }
+
+  &__people {
+    display: flex;
+    width: rem(1200);
+    height: rem(210);
+    justify-content: space-evenly;
+    margin: 30px 34px 0 auto;
+
+    @include display (phone) {
+      width: auto;
+      margin: auto;
+    }
+
+    @include display (tablet) {
+      margin: 30px auto;
+      width: auto;
+    }
+
+    p {
+      line-height: 2;
+      padding-left: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      color: $white;
+
+      @include display (phone) {
+        width: auto;
+      }
+    }
+
+    span {
+      padding-left: rem(145);
+      position: relative;
+      top: -20px;
+      color: $white;
+      font-weight: 400;
+      font-size: 14px;
+      
+      @include display (phone) {
+        padding-left: 115px;
+      }
+    }
+  }
+}

@@ -14,13 +14,90 @@ body {
   margin: auto;
 }
 
+.hidden {
+  @include display(phone) {
+    display: none;
+  }
+
+  &-client {
+    @include display(phone) {
+      visibility: hidden;
+    }
+  }
+}
+
 button {
   border-radius: 8px;
   border: none;
 }
 
-.hidden {
-  @include display(phone) {
-    display: none;
+.client {
+  display: flex;
+  border-radius: 10px;
+  width: rem(540);
+  background-color: $white;
+  height: rem(210);
+  margin-right: 30px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+
+  @include display (phone) {
+    width: auto;
+    margin: auto;
+  }
+
+  @include display (tablet) {
+    margin: auto 20px;
+    width: auto;
+  }
+  
+  &:after {
+    position: relative;
+    background-color: $white;
+    content: "";
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    top: 2%;
+    left: 45%;
+    transform: rotate(-45deg);
+  }
+
+  &-phone {
+    @include display (phone) {
+      display: none;
+    }
+  }
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  width: rem(320);
+  height: 56px;
+
+  @include display (phone) {
+    padding-top: 20px;
+  }
+
+  @include display (tablet) {
+    margin: auto;
+    width: auto;
+  }
+
+  &-phone {
+    @include display (phone) {
+      display: none;
+    } 
+  }
+}
+
+.person {
+  position: relative;
+  padding-left: 70px;
+
+  @include display (phone) {
+    padding-left: rem(40);
   }
 }

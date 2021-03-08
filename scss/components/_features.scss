@@ -14,6 +14,7 @@
 
     @include display (tablet) {
       margin: 40px;
+      height: rem(600);
       width: auto;
     }
 

@@ -84,7 +84,7 @@ button {
   border-radius: 10px;
   width: 33.75rem;
   background-color: #FFFFFF;
-  height: 13.125rem;
+  height: 13.75rem;
   margin-right: 30px;
   justify-content: center;
   flex-direction: column;
@@ -136,6 +136,9 @@ button {
     width: auto;
   }
 }
+.people-phone {
+  padding-left: 30px;
+}
 @media (max-width: 576px) {
   .people-phone {
     display: none;
@@ -153,15 +156,12 @@ button {
 }
 
 .header {
-  margin: auto;
   background-color: #FFFFFF;
 }
 .header__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1200px;
-  margin: auto;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -294,18 +294,18 @@ button {
 .header__sticky {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 .header hr {
   opacity: 0.3;
 }
 
 .landing {
-  max-width: 75rem;
   margin: auto;
 }
 .landing__container {
   display: flex;
-  margin-left: 7rem;
+  margin: auto 10rem;
   align-items: center;
   height: 49.625rem;
 }
@@ -409,27 +409,23 @@ button {
   }
 }
 
-.logos {
-  max-width: 75rem;
-  margin: auto;
-}
 .logos__container {
   display: flex;
   align-items: center;
-  width: 60rem;
-  margin: auto;
+  margin: auto 10rem;
   height: 19.25rem;
 }
 @media (max-width: 576px) {
   .logos__container {
     width: auto;
+    margin: 0;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .logos__container {
     display: flex;
     justify-content: space-around;
-    width: auto;
+    margin: 0;
   }
 }
 @media (max-width: 576px) {
@@ -485,7 +481,6 @@ button {
   height: 90px;
   border: none;
   border-radius: 16px;
-  padding: 0 30px 0 30px;
 }
 @media (max-width: 576px) {
   .logos__container-companies .svg {
@@ -502,13 +497,13 @@ button {
 .features__container {
   display: flex;
   height: 60rem;
-  width: 60rem;
-  margin: 0 0 0 auto;
+  margin: auto 10rem;
 }
 @media (max-width: 576px) {
   .features__container {
     width: auto;
     text-align: center;
+    margin: 0;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
@@ -528,16 +523,19 @@ button {
     font-size: 35px;
   }
 }
-.features__container img {
+.features__container .iphone {
+  width: 19.5625rem;
+  height: 42.4375rem;
   margin-top: 10.625rem;
+  margin-left: 7rem;
 }
 @media (max-width: 576px) {
-  .features__container img {
+  .features__container .iphone {
     display: none;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
-  .features__container img {
+  .features__container .iphone {
     display: none;
   }
 }
@@ -594,7 +592,7 @@ button {
   }
 }
 .features__texts-headlines .text {
-  padding-left: 70px;
+  padding-left: 40px;
 }
 @media (max-width: 576px) {
   .features__texts-headlines .text {
@@ -640,7 +638,7 @@ button {
   position: absolute;
   opacity: 0.15;
   padding-top: 3rem;
-  padding-right: 7rem;
+  padding-right: 9.0625rem;
 }
 @media (max-width: 576px) {
   .clients .quote {
@@ -655,14 +653,23 @@ button {
 .clients__main {
   display: flex;
   flex-direction: column;
-  margin: 80px auto;
-  width: 75rem;
+  margin: 0 10rem;
   height: 19.75rem;
+}
+@media (max-width: 576px) {
+  .clients__main {
+    margin: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .clients__main {
+    margin: 50px 0;
+  }
 }
 .clients__text {
   width: 45.625rem;
   height: 4rem;
-  margin: 0px 0px 30px 120px;
+  margin: 80px 0px 32px 120px;
 }
 @media (max-width: 576px) {
   .clients__text {
@@ -689,9 +696,9 @@ button {
 }
 .clients__testimonials {
   display: flex;
-  width: 65.625rem;
+  width: 68.125rem;
   height: 13.125rem;
-  margin: 0 34px 0 auto;
+  margin: 0 23px 0 auto;
 }
 @media (max-width: 576px) {
   .clients__testimonials {
@@ -701,7 +708,7 @@ button {
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .clients__testimonials {
-    margin: 0;
+    margin: 30px 0;
     width: auto;
   }
 }
@@ -731,8 +738,8 @@ button {
 }
 @media (max-width: 576px) {
   .clients__testimonials p {
-    font-size: 9px;
-    line-height: 2;
+    font-size: 13px;
+    line-height: 1;
   }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
@@ -756,7 +763,7 @@ button {
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .clients__people {
-    margin: 30px auto;
+    margin: 0 auto;
     width: auto;
   }
 }
@@ -784,6 +791,59 @@ button {
   .clients__people span {
     padding-left: 115px;
   }
+}
+
+.statistics__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 14.75rem;
+  margin: auto 10rem;
+}
+@media (max-width: 576px) {
+  .statistics__container {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .statistics__container {
+    margin: 0 48px;
+  }
+}
+.statistics__data {
+  display: flex;
+  flex-direction: column;
+  width: 15.9375rem;
+  height: 6.75rem;
+  border-bottom: 2px solid black;
+}
+@media (max-width: 576px) {
+  .statistics__data {
+    width: auto;
+  }
+  .statistics__data:nth-child(3) {
+    order: 4;
+  }
+  .statistics__data:nth-child(4) {
+    order: 3;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .statistics__data {
+    margin: 0 10px;
+  }
+}
+.statistics__data h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+.statistics__data span {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 /*# sourceMappingURL=index.css.map */

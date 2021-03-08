@@ -5,6 +5,7 @@ const $logo = document.querySelector('.js-logos');
 const $feat = document.querySelector('.js-features');
 const $line = document.querySelector('.js-hr');
 const $client = document.querySelector('.js-clients');
+const $stats = document.querySelector('.js-statistics');
 const sticky = $head.offsetTop;
 
 window.onscroll = handleStickyScroll
@@ -16,6 +17,7 @@ $menu.addEventListener('click', () => {
   $logo.classList.toggle('hidden');
   $feat.classList.toggle('hidden');
   $line.classList.toggle('hidden');
+  $stats.classList.toggle('hidden');
   $client.classList.toggle('hidden-client');
 })
 

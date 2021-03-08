@@ -17,7 +17,7 @@
     position: absolute;
     opacity: 0.15;
     padding-top: rem(48);
-    padding-right: rem(112);
+    padding-right: rem(145);
 
     @include display (phone) {
       display: none;
@@ -31,15 +31,22 @@
   &__main {
     display: flex;
     flex-direction: column;
-    margin: 80px auto;
-    width: rem(1200);
+    margin: 0 10rem;
     height: rem(316);
+
+    @include display (phone) {
+      margin: 0;
+    }
+
+    @include display (tablet) {
+      margin: 50px 0;
+    }
   }
 
   &__text {
     width: rem(730);
     height: rem(64);
-    margin: 0px 0px 30px 120px;
+    margin: 80px 0px 32px 120px;
 
     @include display (phone) {
       margin: auto;
@@ -65,9 +72,9 @@
 
   &__testimonials {
     display: flex;
-    width: rem(1050);
+    width: rem(1090);
     height: rem(210);
-    margin: 0 34px 0 auto;
+    margin: 0 23px 0 auto;
 
     @include display (phone) {
       width: auto;
@@ -75,7 +82,7 @@
     }
 
     @include display (tablet) {
-      margin: 0;
+      margin: 30px 0;
       width: auto;
     }
 
@@ -103,8 +110,8 @@
       padding: 10px;
 
       @include display (phone) {
-        font-size: 9px;
-        line-height: 2;
+        font-size: 13px;
+        line-height: 1;
       }
 
       @include display (tablet) {
@@ -127,7 +134,7 @@
     }
 
     @include display (tablet) {
-      margin: 30px auto;
+      margin: 0 auto;
       width: auto;
     }
 

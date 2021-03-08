@@ -1,13 +1,10 @@
 .header {
-  margin: auto;
   background-color: $white;
 
   &__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
     padding-top: 26px;
     padding-bottom: 26px;
 
@@ -161,6 +158,7 @@
   &__sticky {
     position: sticky;
     top: 0;
+    z-index: 2;
   }
 
   hr {

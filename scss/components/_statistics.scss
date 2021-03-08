@@ -1,0 +1,56 @@
+.statistics {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14.75rem;
+    margin: auto 10rem;
+
+    @include display (phone) {
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include display (tablet) {
+      margin: 0 48px;
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    width: rem(255);
+    height: rem(108);
+    border-bottom: 2px solid black;
+
+    @include display (phone) {
+      width: auto;
+
+      &:nth-child(3) {
+        order: 4;
+      }
+
+      &:nth-child(4) {
+        order: 3;
+      }
+    }
+
+    @include display (tablet) {
+      margin: 0 10px;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 64px;
+    }
+
+    span {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}

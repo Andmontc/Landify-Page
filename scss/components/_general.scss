@@ -36,7 +36,7 @@ button {
   border-radius: 10px;
   width: rem(540);
   background-color: $white;
-  height: rem(210);
+  height: rem(220);
   margin-right: 30px;
   justify-content: center;
   flex-direction: column;
@@ -87,6 +87,7 @@ button {
   }
 
   &-phone {
+    padding-left: 30px;
     @include display (phone) {
       display: none;
     } 

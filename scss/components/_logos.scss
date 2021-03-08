@@ -1,22 +1,20 @@
 .logos {
-  max-width: rem(1200);
-  margin: auto;
 
   &__container {
     display: flex;
     align-items: center;
-    width: rem(960);
-    margin: auto;
+    margin: auto 10rem;
     height: rem(308);
 
     @include display (phone) {
       width: auto;
+      margin: 0;
     }
 
     @include display (tablet) {
       display: flex;
       justify-content: space-around;
-      width: auto;
+      margin: 0;
     }
 
     &-text {
@@ -71,7 +69,6 @@
         height: 90px;
         border: none;
         border-radius: 16px;
-        padding: 0 30px 0 30px;
 
         @include display(phone) {
           &--none {

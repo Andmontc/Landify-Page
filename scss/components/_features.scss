@@ -4,12 +4,12 @@
   &__container {
     display: flex;
     height: rem(960);
-    width: rem(960);
-    margin: 0 0 0 auto;
+    margin: auto 10rem;
 
     @include display (phone) {
       width: auto;
       text-align: center;
+      margin: 0;
     }
 
     @include display (tablet) {
@@ -28,8 +28,11 @@
       }
     }
 
-    img {
+    .iphone {
+      width: rem(313);
+      height: rem(679);
       margin-top: 10.625rem;
+      margin-left: 7rem;
 
       @include display (phone) {
         display: none;
@@ -91,7 +94,7 @@
       }
 
       .text {
-        padding-left: 70px;
+        padding-left: 40px;
 
         @include display (phone) {
           padding: 0;

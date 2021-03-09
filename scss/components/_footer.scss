@@ -9,6 +9,15 @@
     height: rem(312);
     margin: auto 10rem;
 
+    @include display (phone) {
+      flex-wrap: wrap;
+      margin: 0 10px;
+    }
+
+    @include display (tablet) {
+      margin: 0 10px;
+    }
+
     .data {
       width: 20%;
       height: rem(76);
@@ -16,11 +25,25 @@
       flex-direction: column;
       color: $white;
 
+      @include display (phone) {
+        width: auto;
+        margin: 0;
+      }
+
+      @include display (tablet) {
+        width: auto;
+        margin: 0;
+      }
+
       h4 {
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 24px;
+
+        @include display (phone) {
+          margin-bottom: 5px;
+        }
       }
 
       p {
@@ -31,6 +54,16 @@
 
       .gplay {
         margin-bottom: 16px;
+
+        @include display (phone) {
+          margin-bottom: 0px;
+          padding-right: 25px;
+        }
+
+        @include display (tablet) {
+          width: auto;
+          margin: 0;
+        }
       }
     }
   }
@@ -42,6 +75,15 @@
     height: rem(80);
     margin: auto 10rem;
     color: $white;
+
+    @include display (phone) {
+      margin: 0 10px;
+    }
+
+    @include display (tablet) {
+      width: auto;
+      margin: 0 10px;
+    }
 
     &-icons {
       display: flex;

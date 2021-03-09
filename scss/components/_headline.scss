@@ -20,8 +20,13 @@
     border-radius: 16px;
     background-color: $main-background;
 
+    @include display (phone) {
+      border-radius: 0;
+    }
+
     @include display (tablet) {
       justify-content: center;
+      border-radius: 0;
     }
 
     &-info {

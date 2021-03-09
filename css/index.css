@@ -63,6 +63,10 @@ body {
   margin: auto;
 }
 
+hr {
+  opacity: 0.3;
+}
+
 @media (max-width: 576px) {
   .hidden {
     display: none;
@@ -164,6 +168,7 @@ button {
   align-items: center;
   padding-top: 26px;
   padding-bottom: 26px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 576px) {
   .header__container {
@@ -295,9 +300,6 @@ button {
   position: sticky;
   top: 0;
   z-index: 2;
-}
-.header hr {
-  opacity: 0.3;
 }
 
 .landing {
@@ -885,7 +887,7 @@ button {
   width: 27.75rem;
   height: 19.25rem;
   margin-left: 48px;
-  margin-right: 150px;
+  margin-right: 250px;
 }
 @media (max-width: 576px) {
   .headline__container-info {
@@ -1073,6 +1075,64 @@ button {
     width: 40%;
     border-radius: 0;
   }
+}
+
+.footer {
+  height: 24.5625rem;
+  background-color: black;
+}
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 19.5rem;
+  margin: auto 10rem;
+}
+.footer__info .data {
+  width: 20%;
+  height: 4.75rem;
+  margin-bottom: 145px;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+.footer__info .data h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+.footer__info .data p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__info .data .gplay {
+  margin-bottom: 16px;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin: auto 10rem;
+  color: #FFFFFF;
+}
+.footer__social-icons {
+  display: flex;
+}
+.footer__social .icon {
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  margin: 0 10px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.footer__social .icon path {
+  fill: #FFFFFF;
 }
 
 /*# sourceMappingURL=index.css.map */

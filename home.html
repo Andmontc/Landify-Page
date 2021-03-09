@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#0BD8A2">
   <meta name="description" content="Landify is a fake-training webpage">
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
   <link href='./css/index.css' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
-  <link rel="preload">
   <title>Landify</title>
 </head>
 <body>
@@ -42,7 +41,6 @@
         <button aria-label="Sing up">Sign up</button>
       </div>
     </div>
-    <hr class="js-hr">
   </header>
   <main class="container">
     <section class="landing js-landing">
@@ -215,7 +213,53 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer container">
+    <div class="footer__info">
+      <div class="data">
+        <h4>Company</h4>
+        <p>About Us</p>
+        <p>Blog</p>
+        <p>Career</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="data">
+        <h4>Support</h4>
+        <p>Help Center</p>
+        <p>Safety Center</p>
+        <p>Community Guidelines</p>
+      </div>
+      <div class="data">
+        <h4>Legal</h4>
+        <p>Cookies Policy</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+        <p>Law enforcement</p>
+      </div>
+      <div class="data">
+        <h4>Install App</h4>
+        <img src="./assets/google-play.svg" class="gplay" alt="googleplay">
+        <img src="./assets/app-store.svg" alt="appstore">
+      </div>
+    </div>
+    <hr>
+    <div class="footer__social">
+      <span>&copy; 2020 Landify UI Kit. All rights reserved </span>
+      <div class="footer__social-icons">
+        <div class="icon">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="icon">
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <div class="icon">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="icon">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="./js/script.js"></script>
 </body>
 </html>

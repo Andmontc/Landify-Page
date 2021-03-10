@@ -52,7 +52,6 @@ button {
   }
 
   @include display (tablet) {
-    margin: auto 20px;
     width: auto;
   }
   
@@ -69,6 +68,7 @@ button {
   }
 
   &-phone {
+    margin: auto;
     @include display (phone) {
       display: none;
     }

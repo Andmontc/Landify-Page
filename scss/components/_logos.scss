@@ -3,7 +3,7 @@
   &__container {
     display: flex;
     align-items: center;
-    margin: auto 10rem;
+    margin: auto rem(165);
     height: rem(308);
 
     @include display (phone) {
@@ -28,33 +28,33 @@
         display: flex;
         flex-wrap: wrap;
       }
+    }
 
-      h2 {
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 64px;
+    &-title {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 64px;
 
-        @include display (phone) {
-          font-size: 28px;
-        }
+      @include display (phone) {
+        font-size: 28px;
       }
+    }
 
-      p {
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 30px;
+    &-data {
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 30px;
 
-        @include display (phone) {
-          font-size: 18px;
-          line-height: 30px
-        }
+      @include display (phone) {
+        font-size: 18px;
+        line-height: 30px
       }
     }
 
     &-companies {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: center;
 
       @include display (tablet) {
         flex-basis: 50%;

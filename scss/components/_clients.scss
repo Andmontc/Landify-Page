@@ -1,8 +1,7 @@
 .clients {
-  display: flex;
   height: rem(610);
-  justify-content: flex-end;
   background-color: $main-background;
+  margin: auto;
 
   @include display (phone) {
     height: rem(510);
@@ -13,11 +12,16 @@
     width: auto;
   }
 
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .quote {
     position: absolute;
     opacity: 0.15;
     padding-top: rem(48);
-    padding-right: rem(145);
+    padding-right: rem(105);
 
     @include display (phone) {
       display: none;
@@ -31,7 +35,6 @@
   &__main {
     display: flex;
     flex-direction: column;
-    margin: 0 10rem;
     height: rem(316);
 
     @include display (phone) {
@@ -58,7 +61,7 @@
       width: auto;
     }
 
-    h2 {
+    &-title {
       font-weight: 800;
       font-size: 48px;
       line-height: 64px;
@@ -74,7 +77,7 @@
     display: flex;
     width: rem(1090);
     height: rem(210);
-    margin: 0 23px 0 auto;
+    margin: 0 rem(165);
 
     @include display (phone) {
       width: auto;
@@ -82,11 +85,11 @@
     }
 
     @include display (tablet) {
-      margin: 30px 0;
+      margin: 30px 16px;
       width: auto;
     }
 
-    h6 {
+    &-title {
       font-weight: 500;
       font-size: 18px;
       text-align: center;
@@ -102,7 +105,7 @@
       }
     }
 
-    p {
+    &-text {
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
@@ -126,7 +129,7 @@
     width: rem(1200);
     height: rem(210);
     justify-content: space-evenly;
-    margin: 30px 34px 0 auto;
+    margin: 30px 54px;
 
     @include display (phone) {
       width: auto;
@@ -138,7 +141,7 @@
       width: auto;
     }
 
-    p {
+    &-name {
       line-height: 2;
       padding-left: 20px;
       font-weight: 700;
@@ -150,7 +153,7 @@
       }
     }
 
-    span {
+    &-text {
       padding-left: rem(145);
       position: relative;
       top: -20px;
@@ -161,6 +164,14 @@
       @include display (phone) {
         padding-left: 115px;
       }
+    }
+  }
+
+  .slider {
+    margin: auto;
+
+    @include display (phone) {
+      padding-top: 30px;
     }
   }
 }

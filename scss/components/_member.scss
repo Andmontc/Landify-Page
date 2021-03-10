@@ -1,11 +1,5 @@
 .member {
-  display: flex;
   height: rem(430);
-  justify-content: center;
-
-  @include display (phone) {
-    height: rem(500);
-  }
 
   @include display (tablet) {
     height: rem(500);
@@ -15,83 +9,82 @@
     display: flex;
     width: rem(1110);
     height: rem(302);
-    margin: auto;
+    margin: auto rem(165);
     justify-content: space-between;
     border-radius: 16px;
     background-color: $secondary-background;
 
     @include display (phone) {
       width: 100%;
-      height: 80%;
       margin: 0;
       border-radius: 0;
     }
 
     @include display (tablet) {
-      margin: 10px 0;
+      width: 100%;
       border-radius: 0;
+      margin: 0;
     }
 
     &-info {
-      position: absolute;
-      margin-left: rem(490);
-      height: rem(90);
+      border-radius: 16px;
+      overflow: hidden;
+
+      @include display (phone) {
+        margin: 0;
+        border-radius: 0;
+      }
 
       @include display (tablet) {
         margin: 0;
+        border-radius: 0;
       }
     }
 
     &-text {
-      width: rem(525);
-      margin: 48px 48px;
+      margin: 48px 0px 0px 48px;
 
       @include display (phone) {
         margin: 0 10px;
       }
 
       @include display (tablet) {
-        margin: 0 10px;
+        margin: 0;
       }
+    }
 
-      h3 {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 54px;
+    &-headline {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 54px;
 
-        @include display (phone) {
-          font-size: 30px;
-        }
+      @include display (phone) {
+        font-size: 30px;
+        line-height: 48px;
       }
+    }
 
-      button {
-        width: rem(240);
-        height: rem(62);
-        border-radius: 8px;
-        margin-top: 32px;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-        color: $main-background;
-
-        @include display (phone) {
-          width: 80%;
-        }
-      }
+    &-button {
+      width: rem(240);
+      height: rem(62);
+      border-radius: 8px;
+      margin-top: 32px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: $main-background;
     }
   }
 
   .arrow {
-    margin: rem(80) 0px;
+    margin: rem(80) 0;
 
     @include display (phone) {
       display: none;
     }
 
     @include display (tablet) {
-      margin-left: rem(250);
-      margin-top: 100px;
-      width: 30%;
+      display: none;
     }
   }
 
@@ -105,8 +98,12 @@
   }
 
   .text {
-    position: absolute;
-    margin: rem(180) 50px;
+    position: relative;
+    width: 200px;
+    height: 260px;
+    top: 140px;
+    right: 4px;
+    z-index: 2;
 
     @include display (phone) {
       display: none;
@@ -114,14 +111,19 @@
   }
 
   .girl {
+    position: relative;
+    width: rem(500);
+    height: rem(500);
+    left: 62px;
     border-radius: 16px;
+    top: -25.375rem;
 
     @include display (phone) {
-      width: 50%
+      left: 81px;
+      top: rem(-114);
     }
 
     @include display (tablet) {
-      width: 40%;
       border-radius: 0;
     }
   }

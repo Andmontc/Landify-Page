@@ -4,10 +4,10 @@
 
   &__info {
     display: flex;
+    margin: auto rem(165);
     align-items: center;
     justify-content: space-between;
     height: rem(312);
-    margin: auto 10rem;
 
     @include display (phone) {
       flex-wrap: wrap;
@@ -17,63 +17,67 @@
     @include display (tablet) {
       margin: 0 10px;
     }
+  }
 
-    .data {
-      width: 20%;
-      height: rem(76);
-      margin-bottom: 145px;
-      flex-direction: column;
-      color: $white;
+  &__data {
+    width: 20%;
+    height: rem(76);
+    margin-bottom: 145px;
+    flex-direction: column;
+    color: $white;
+
+    @include display (phone) {
+      width: auto;
+      margin: 0;
+    }
+
+    @include display (tablet) {
+      width: auto;
+      margin: 0;
+    }
+
+    &-text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 24px;
 
       @include display (phone) {
-        width: auto;
-        margin: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-details {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+
+      @include display (phone) {
+        line-height: 18px;
+      }
+    }
+
+    .gplay {
+
+      @include display (phone) {
+        margin-bottom: 0px;
+        padding-right: 25px;
       }
 
       @include display (tablet) {
         width: auto;
         margin: 0;
       }
-
-      h4 {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        margin-bottom: 24px;
-
-        @include display (phone) {
-          margin-bottom: 5px;
-        }
-      }
-
-      p {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-      }
-
-      .gplay {
-        margin-bottom: 16px;
-
-        @include display (phone) {
-          margin-bottom: 0px;
-          padding-right: 25px;
-        }
-
-        @include display (tablet) {
-          width: auto;
-          margin: 0;
-        }
-      }
     }
   }
 
   &__social {
     display: flex;
+    max-width: 1110px;
+    margin: auto;
     align-items: center;
     justify-content: space-between;
     height: rem(80);
-    margin: auto 10rem;
     color: $white;
 
     @include display (phone) {

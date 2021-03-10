@@ -4,36 +4,36 @@
   align-items: center;
   justify-content: center;
 
-  @include display (phone) {
-    height: rem(500);
-  }
-
   @include display (tablet) {
     height: rem(500);
   }
 
   &__container {
     display: flex;
+    margin: auto rem(165);
     width: rem(1110);
     height: rem(388);
     align-items: center;
     border-radius: 16px;
+    justify-content: space-around;
     background-color: $main-background;
 
     @include display (phone) {
+      margin: 0;
       border-radius: 0;
     }
 
     @include display (tablet) {
       justify-content: center;
       border-radius: 0;
+      margin: 0;
     }
 
     &-info {
+      display: flex;
+      flex-direction: column;
       width: rem(444);
       height: rem(308);
-      margin-left: 48px;
-      margin-right: 250px;
 
       @include display (phone) {
         width: auto;
@@ -43,34 +43,39 @@
       @include display (tablet) {
         margin: 0;
       }
+    }
 
-      h3 {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 54px;
-        margin-bottom: 32px;
-        color: $white;
-      }
+    &-title {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 54px;
+      margin-bottom: 32px;
+      color: $white;
+    }
 
-      p{
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-        margin-bottom: 32px;
-        color: $white;
-      }
+    &-data {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 32px;
+      color: $white;
 
-      a{
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-        text-decoration: none;
-        color: $white;
+      @include display (phone) {
+        line-height: 24px;
       }
     }
 
+    &-link {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      text-decoration: none;
+      color: $white;
+    }
+    
+
     &-phone {
-      height: rem(644);
+      height: rem(640);
 
       @include display (phone) {
         display: none;

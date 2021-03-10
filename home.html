@@ -15,9 +15,9 @@
   <header class="header container js-header">
     <div class="header__container js-header-container">
       <button class="header__menu js-header-menu" aria-label="hamburger menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="header__menu-span"></span>
+        <span class="header__menu-span"></span>
+        <span class="header__menu-span"></span>
       </button>
       <nav class="header__navbar">
         <ul class="header__navbar-list">
@@ -37,30 +37,30 @@
         <path d="M40.4 18V7h-3.2v14h8.2v-3h-5zM53.9 11v1a3.8 3.8 0 00-3-1.3C48.3 10.7 46 13 46 16s2.2 5.3 4.8 5.3c1.3 0 2.3-.5 3-1.2v.9h3V11h-3zm-2.4 7.4c-1.4 0-2.4-.9-2.4-2.4s1-2.4 2.4-2.4 2.4.9 2.4 2.4-1 2.4-2.4 2.4zM65 10.7c-1.4 0-2.4.5-3 1.2V11h-3v10h3v-5.5c0-1.4.8-2 2-2 .9 0 1.7.6 1.7 1.8V21h3v-6.1c0-2.7-1.7-4.2-3.8-4.2zM78 7v5a3.8 3.8 0 00-3-1.3c-2.6 0-4.8 2.3-4.8 5.3s2.2 5.3 4.8 5.3c1.4 0 2.3-.5 3-1.2v.9h3V7h-3zm-2.4 11.4c-1.4 0-2.4-.9-2.4-2.4s1-2.4 2.4-2.4 2.4.9 2.4 2.4-1 2.4-2.4 2.4zM84.7 10.1c1 0 1.8-.8 1.8-1.8s-.8-1.8-1.8-1.8-1.8.8-1.8 1.8.8 1.8 1.8 1.8zM83.2 21h3V11h-3v10zM93.9 9.6V6.7C90.6 6.5 89 8.2 89 11h-1.3v2.9H89V21h3v-7.1H94V11H92c0-1.2.8-1.5 1.9-1.4zM101.7 11l-1.9 6.1-2.2-6.1h-3.3l4 9.5c-.5 1.3-1.1 1.7-2.5 1.7V25c2.8.1 4.5-1.1 5.7-4.3l3.4-9.7h-3.2z" fill="#0B0D17"/>
       </svg>
       <div class="header__buttons">
-        <button aria-label="login">Login</button>
-        <button aria-label="Sing up">Sign up</button>
+        <button class="header__buttons-button" aria-label="login">Login</button>
+        <button class="header__buttons-button" aria-label="Sing up">Sign up</button>
       </div>
     </div>
   </header>
   <main class="container">
     <section class="landing js-landing">
-      <div class="landing__container">
-        <article class="landing__text">
-          <h1>Landing page UI kit</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
-          <button aria-label="Get Started">Get Started</button>
-        </article>
+      <div class="landing__container container">
+        <div class="landing__text">
+          <h1 class="landing__text-title">Landing page UI kit</h1>
+          <p class="landing__text-data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
+          <button class="landing__text-button" aria-label="Get Started">Get Started</button>
+        </div>
         <div class="landing__img">
-          <svg width="640" height="640" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="320" cy="320" r="320" fill="#D6B1FF"/></svg>
-          <img src="./assets/web-preview.svg" alt="Dashboard">
+          <svg class="landing__img-circle" width="640" height="640" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="320" cy="320" r="320" fill="#D6B1FF"/></svg>
+          <img class="landing__img-dash" src="./assets/screen.svg" alt="Dashboard">
         </div>
       </div>
     </section>
     <section class="logos js-logos">
       <div class="logos__container">
         <article class="logos__container-text">
-          <h2>1,50,000+</h2>
-          <p>Customers who use Landify UI Kit to build their new startup landing page.</p>
+          <h2 class="logos__container-title">1,50,000+</h2>
+          <p class="logos__container-data">Customers who use Landify UI Kit to build their new startup landing page.</p>
         </article>
         <div class="logos__container-companies">
           <div class="svg">
@@ -93,41 +93,41 @@
     <section class="features js-features">
       <div class="features__container">
         <div>
-          <h2>App Features</h2>
+          <h2 class="features__container-title">App Features</h2>
           <div class="features__headlines">
             <div class="features__texts">
-              <div class="features__texts-headlines">
-                <img src="./assets/Feature Icon with circle.svg" alt="icon">
+              <div class="features__texts-headline">
+                <img src="./assets/feature-icon-with-circle-1.svg" class="features__texts-img" alt="icon">
                 <div class="text">
-                  <h5>Headline</h5>
-                  <p>
+                  <h5 class="text-title">Headline</h5>
+                  <p class="text-info">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum porta magna at blandit a.
                   </p>
                 </div>
               </div>
-              <div class="features__texts-headlines">
-                <img src="./assets/Feature Icon with circle 1.svg" alt="icon">
+              <div class="features__texts-headline">
+                <img src="./assets/feature-icon-with-circle-1.svg"  class="features__texts-img" alt="icon">
                 <div class="text">
-                  <h5>Headline</h5>
-                  <p>
+                  <h5 class="text-title">Headline</h5>
+                  <p class="text-info">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum porta magna at blandit a.
                   </p>
                 </div>
               </div>
-              <div class="features__texts-headlines">
-                <img src="./assets/Feature Icon with circle 2.svg" alt="icon">
+              <div class="features__texts-headline">
+                <img src="./assets/feature-icon-with-circle-2.svg" class="features__texts-img" alt="icon">
                 <div class="text">
-                  <h5>Headline</h5>
-                  <p>
+                  <h5 class="text-title">Headline</h5>
+                  <p class="text-info">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum porta magna at blandit a.
                   </p>
                 </div>
               </div>
-              <div class="features__texts-headlines">
-                <img src="./assets/Feature Icon with circle 3.svg" alt="icon">
+              <div class="features__texts-headline">
+                <img src="./assets/feature-icon-with-circle-3.svg" class="features__texts-img"alt="icon">
                 <div class="text">
-                  <h5>Headline</h5>
-                  <p>
+                  <h5 class="text-title">Headline</h5>
+                  <p class="text-info">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum porta magna at blandit a.
                   </p>
                 </div>
@@ -138,105 +138,107 @@
         <img src="./assets/iPhone X.svg" class="iphone" alt="iphone-img">
       </div>
     </section>
+  </main>
     <section class="clients js-clients">
-      <img src="./assets/quotes.svg" class="quote" alt="quotes">
-      <div class="clients__main">
-        <div class="clients__text">
-            <h2>Our clients speak</h2>
-        </div>
-        <div class="clients__testimonials">
-          <div class="client">
-            <h6>Incredible Experience</h6>
-            <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
+      <div class="clients__container">
+        <img src="./assets/quotes.svg" class="quote" alt="quotes">
+        <div class="clients__main">
+          <div class="clients__text">
+              <h2 class="clients__text-title">Our clients speak</h2>
           </div>
-          <div class="client client-phone">
-            <h6>Dependable, Responsive, Professional Partner</h6>
-            <p>Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. The team is always thinking beyond the current tasks & helps us formulate a vision and possibilities for future.</p>
+          <div class="clients__testimonials">
+            <div class="client">
+              <h6 class="clients__testimonials-title">Incredible Experience</h6>
+              <p class="clients__testimonials-text">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</p>
+            </div>
+            <div class="client client-phone">
+              <h6 class="clients__testimonials-title">Dependable, Responsive, Professional Partner</h6>
+              <p class="clients__testimonials-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. The team is always thinking beyond the current tasks & helps us formulate a vision and possibilities for future.</p>
+            </div>
           </div>
-        </div>
-        <div class="clients__people">
-          <div class="people">
-            <img src="./assets/Photo.svg" class="person" alt="client">
-            <p> Jane Cooper</p>
-            <span>CEO, ABC Corporation</span>
+          <div class="clients__people">
+            <div class="people">
+              <img src="./assets/photo.svg" class="person" alt="client">
+              <p class="clients__people-name"> Jane Cooper</p>
+              <span class="clients__people-text">CEO, ABC Corporation</span>
+            </div>
+            <div class="people people-phone">
+              <img src="./assets/Photo.svg" class="person" alt="client">
+              <p class="clients__people-name"> Jane Cooper</p>
+              <span class="clients__people-text">CEO, ABC Corporation</span>
+            </div>
           </div>
-          <div class="people people-phone">
-            <img src="./assets/Photo.svg" class="person" alt="client">
-            <p> Jane Cooper</p>
-            <span>CEO, ABC Corporation</span>
-          </div>
+          <img src="./assets/slider.svg" class="slider" alt="slider controls">
         </div>
       </div>
     </section>
-    <section class="statistics js-statistics">
+    <section class="statistics container js-statistics">
       <div class="statistics__container">
         <div class="statistics__data">
-          <h2>40+</h2>
-          <span>Happy Clients</span>
+          <h2 class="statistics__data-number">40+</h2>
+          <span class="statistics__data-detail">Happy Clients</span>
         </div>
         <div class="statistics__data">
-          <h2>540+</h2>
-          <span>Projects Completed</span>
+          <h2 class="statistics__data-number">540+</h2>
+          <span class="statistics__data-detail">Projects Completed</span>
         </div>
         <div class="statistics__data">
-          <h2>300+</h2>
-          <span>Dedicated Members</span>
+          <h2 class="statistics__data-number">300+</h2>
+          <span class="statistics__data-detail">Dedicated Members</span>
         </div>
         <div class="statistics__data">
-          <h2>25+</h2>
-          <span>Awards Won</span>
+          <h2 class="statistics__data-number">25+</h2>
+          <span class="statistics__data-detail">Awards Won</span>
         </div>
       </div>
     </section>
-    <section class="headline js-headline">
+    <section class="headline container js-headline">
       <div class="headline__container">
         <div class="headline__container-info">
-          <h3>Headline</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
-          <a href="#">Get Started 	&rarr;</a>
+          <h3 class="headline__container-title">Headline</h3>
+          <p class="headline__container-data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</p>
+          <a class="headline__container-link" href="#">Get Started 	&rarr;</a>
         </div>
       <img src="./assets/iPhone X.svg" class="headline__container-phone" alt="phone">
       </div>
     </section>
-    <section class="member js-member">
+    <section class="member container js-member">
       <div class="member__container">
         <div class="member__container-text">
-          <h3>Become a member of this growing communtity</h3>
-          <button>Join the community</button>
+          <h3 class="member__container-headline">Become a member of this growing communtity</h3>
+          <button class="member__container-button">Join the community</button>
         </div>
+        <img src="assets/arrow.svg" class="arrow" alt='arrow'>
         <div class="member__container-info">
-          <img src="assets/arrow.svg" class="arrow" alt='arrow'>
-          <img src="./assets/bg.svg" class="box" alt="box">
-          <img src="./assets/your-photo-here.svg" class="text" alt="text">
-        </div>
+          <img src="./assets/photo-here.svg" class="text" alt="text">
           <img src="./assets/girl.svg" class="girl" alt="girl-photo">
+        </div>
       </div>
     </section>
-  </main>
-  <footer class="footer container">
+  <footer class="footer container js-footer">
     <div class="footer__info">
-      <div class="data">
-        <h4>Company</h4>
-        <p>About Us</p>
-        <p>Blog</p>
-        <p>Career</p>
-        <p>Contact Us</p>
+      <div class="footer__data">
+        <h4 class="footer__data-text">Company</h4>
+        <p class="footer__data-details">About Us</p>
+        <p class="footer__data-details">Blog</p>
+        <p class="footer__data-details">Career</p>
+        <p class="footer__data-details">Contact Us</p>
       </div>
-      <div class="data">
-        <h4>Support</h4>
-        <p>Help Center</p>
-        <p>Safety Center</p>
-        <p>Community Guidelines</p>
+      <div class="footer__data">
+        <h4 class="footer__data-text">Support</h4>
+        <p class="footer__data-details">Help Center</p>
+        <p class="footer__data-details">Safety Center</p>
+        <p class="footer__data-details">Community Guidelines</p>
       </div>
-      <div class="data">
-        <h4>Legal</h4>
-        <p>Cookies Policy</p>
-        <p>Privacy Policy</p>
-        <p>Terms of Service</p>
-        <p>Law enforcement</p>
+      <div class="footer__data">
+        <h4 class="footer__data-text">Legal</h4>
+        <p class="footer__data-details">Cookies Policy</p>
+        <p class="footer__data-details">Privacy Policy</p>
+        <p class="footer__data-details">Terms of Service</p>
+        <p class="footer__data-details">Law enforcement</p>
       </div>
-      <div class="data">
-        <h4>Install App</h4>
+      <div class="footer__data">
+        <h4 class="footer__data-text">Install App</h4>
         <img src="./assets/google-play.svg" class="gplay" alt="googleplay">
         <img src="./assets/app-store.svg" alt="appstore">
       </div>

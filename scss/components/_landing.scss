@@ -3,13 +3,16 @@
 
   &__container {
     display: flex;
-    margin: auto 10rem;
+    margin: auto rem(165);
     align-items: center;
     height: rem(794);
 
     @include display(phone) {
       height: rem(280);
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     @include display(tablet) {
@@ -18,18 +21,20 @@
   }
 
   &__text {
-    flex-wrap: wrap;
+    flex-basis: 49%;
 
     @include display(phone) {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     @include display(tablet) {
       margin-left: 0;
+      flex-basis: auto;
     }
     
-    h1 {
+    &-title {
       font-weight: 800;
       font-size: 66px;
       line-height: 98px;
@@ -40,7 +45,7 @@
       }
     }
 
-    p {
+    &-data {
       font-weight: 300;
       font-size: 18px;
       line-height: 32px;
@@ -52,7 +57,7 @@
       }
     }
 
-    button {
+    &-button {
       width: rem(196);
       height: rem(62);
       background-color: $main-background;
@@ -69,15 +74,16 @@
   }
 
   &__img {
-    display: flex;
-    align-items: center;
+    margin: auto;
+    width: 640px;
+    height: 640px;
+    overflow: hidden;
 
     @include display (phone) {
       display: none;
     }
 
-    svg {
-      padding-left: 2rem;
+    &-circle {
       z-index: -2;
 
       @include display(tablet) {
@@ -85,13 +91,14 @@
       }
     }
 
-    img {
-      position: absolute;
-      padding-left: rem(125);
-      padding-top: 20px;
+    &-dash {
+      position: relative;
+      width: rem(608);
+      height: rem(480);
+      bottom: rem(565);
+      left: rem(120);
       border-radius: 8px;
       filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
-      z-index: -1;
 
       @include display(phone) {
         display: none;

@@ -33,3 +33,33 @@ function handleStickyScroll () {
 
   $head.classList.remove('header__sticky');
 }
+
+var slideIndex = 0;
+var faceIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i, j;
+  var slides = document.getElementsByClassName("clients__slider");
+  var face = document.getElementsByClassName("clients__people");
+  var dots = document.getElementsByClassName("clients__dots-dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (j = 0; j < face.length; j++) {
+    face[j].style.display = "none";  
+  }
+
+  slideIndex++;
+  faceIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  if (faceIndex > face.length) {faceIndex = 1}     
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" on", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  face[faceIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " on";
+  setTimeout(showSlides, 2000);
+}

@@ -15,6 +15,14 @@
   &__container {
     display: flex;
     justify-content: flex-end;
+
+    @include display (phone) {
+      margin: 0;
+    }
+
+    @include display (tablet) {
+      margin: 0;
+    }
   }
 
   .quote {
@@ -42,7 +50,7 @@
     }
 
     @include display (tablet) {
-      margin: 50px 0;
+      margin: 10px 0;
     }
   }
 
@@ -57,7 +65,7 @@
     }
 
     @include display (tablet) {
-      margin: auto;
+      margin: 10px auto;
       width: auto;
     }
 
@@ -75,9 +83,7 @@
 
   &__testimonials {
     display: flex;
-    width: rem(1090);
-    height: rem(210);
-    margin: 0 rem(165);
+    max-width: rem(1440);
 
     @include display (phone) {
       width: auto;
@@ -100,8 +106,8 @@
       }
 
       @include display (tablet) {
-        font-size: 15px;
-        padding: 0;
+        font-size: 13px;
+        font-weight: 700;
       }
     }
 
@@ -118,14 +124,14 @@
       }
 
       @include display (tablet) {
-        font-size: 12px;
-        padding: 5px;
+        font-size: 15px;
+        line-height: 1;
       }
     }
   }
 
   &__people {
-    display: flex;
+    display: none;
     width: rem(1200);
     height: rem(210);
     justify-content: space-evenly;
@@ -167,11 +173,112 @@
     }
   }
 
-  .slider {
+  &__slider {
+    display: none;
+    margin: auto rem(165);
+
+    @include display (phone) {
+      margin: 0;
+      flex-direction: column;
+    }
+
+    @include display (tablet) {
+      margin: auto 20px;
+    }
+
+    &-client {
+      display: flex;
+      border-radius: 10px;
+      width: rem(540);
+      background-color: $white;
+      height: rem(220);
+      margin-right: 30px;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px;
+      
+      &:after {
+        position: relative;
+        background-color: $white;
+        content: "";
+        width: 42px;
+        height: 42px;
+        border-radius: 4px;
+        top: 2%;
+        left: 45%;
+        transform: rotate(-45deg);
+      }
+
+      @include display (phone) {
+        width: auto;
+        margin: auto;
+      }
+
+      @include display (tablet) {
+        width: auto;
+        margin: 10px;
+      }
+    }
+  }
+
+  .people {
+    display: flex;
+    flex-wrap: wrap;
+    width: rem(320);
+    height: 56px;
+
+    @include display (phone) {
+      padding-top: 20px;
+    }
+
+    @include display (tablet) {
+      margin: auto;
+      width: auto;
+    }
+
+    &-two {
+      padding-left: 30px;
+
+      @include display (phone) {
+        display: none;
+      } 
+    }
+  }
+
+  .person {
+    position: relative;
+    padding-left: 70px;
+
+    @include display (phone) {
+      padding-left: rem(40);
+    }
+  }
+
+  &__dots {
     margin: auto;
 
     @include display (phone) {
-      padding-top: 30px;
+      margin-top: 30px;
+    }
+
+    &-dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      border-radius: 50%;
+      border: 1px solid $white;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .on {
+      background-color: $secondary-color;
+    }
+  }
+
+  &__phone {
+    @include display (phone) {
+      display: none;
     }
   }
 }

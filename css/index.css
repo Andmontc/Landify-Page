@@ -186,11 +186,17 @@ button {
 }
 .header__buttons-button:nth-child(1) {
   background-color: #F1E4FF;
-  color: #8C30F5;
 }
 .header__buttons-button:nth-child(2) {
   background-color: #8C30F5;
+}
+.header__buttons-button .login {
+  color: #8C30F5;
+  text-decoration: none;
+}
+.header__buttons-button .sign {
   color: #FFFFFF;
+  text-decoration: none;
 }
 @media (max-width: 576px) {
   .header__active .header__navbar {
@@ -301,10 +307,13 @@ button {
   height: 3.875rem;
   background-color: #8C30F5;
   margin: 32px 0px;
-  color: #FFFFFF;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+}
+.landing__text-button .start {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 @media (max-width: 576px) {
   .landing__text-button {
@@ -1074,7 +1083,10 @@ button {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+}
+.member__container-button .join {
   color: #8C30F5;
+  text-decoration: none;
 }
 .member .arrow {
   margin: 5rem 0;

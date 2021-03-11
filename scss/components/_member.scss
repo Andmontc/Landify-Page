@@ -72,7 +72,11 @@
       font-weight: bold;
       font-size: 20px;
       line-height: 30px;
-      color: $main-background;
+
+      .join {
+        color: $main-background;
+        text-decoration: none;
+      }
     }
   }
 

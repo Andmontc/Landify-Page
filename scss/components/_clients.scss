@@ -166,7 +166,7 @@
       color: $white;
       font-weight: 400;
       font-size: 14px;
-      
+
       @include display (phone) {
         padding-left: 115px;
       }
@@ -196,7 +196,7 @@
       justify-content: center;
       flex-direction: column;
       padding: 5px;
-      
+
       &:after {
         position: relative;
         background-color: $white;

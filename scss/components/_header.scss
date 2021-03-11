@@ -108,12 +108,20 @@
 
       &:nth-child(1) {
         background-color: $button-secondary;
-        color: $main-background;
       }
 
       &:nth-child(2) {
         background-color: $main-background;
+      }
+
+      .login {
+        color: $main-background;
+        text-decoration: none;
+      }
+
+      .sign {
         color: $white;
+        text-decoration: none;
       }
     }
   }

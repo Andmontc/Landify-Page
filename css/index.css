@@ -283,6 +283,7 @@ button {
   font-weight: 800;
   font-size: 66px;
   line-height: 98px;
+  padding-right: 20px;
 }
 @media (max-width: 576px) {
   .landing__text-title {
@@ -294,6 +295,7 @@ button {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
+  padding-right: 12px;
 }
 @media (max-width: 576px) {
   .landing__text-data {
@@ -321,18 +323,14 @@ button {
   }
 }
 .landing__img {
-  margin: auto;
+  position: relative;
+  margin-right: -99px;
   width: 640px;
-  height: 640px;
-  overflow: hidden;
 }
 @media (max-width: 576px) {
   .landing__img {
     display: none;
   }
-}
-.landing__img-circle {
-  z-index: -2;
 }
 @media (min-width: 577px) and (max-width: 1024px) {
   .landing__img-circle {
@@ -340,11 +338,13 @@ button {
   }
 }
 .landing__img-dash {
-  position: relative;
-  width: 38rem;
+  position: absolute;
+  width: auto;
+  margin: auto;
   height: 30rem;
-  bottom: 35.3125rem;
-  left: 7.5rem;
+  top: 0;
+  bottom: 0;
+  left: 7.3125rem;
   border-radius: 8px;
   filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
 }

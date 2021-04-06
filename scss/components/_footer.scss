@@ -1,6 +1,7 @@
 .footer {
-  height: rem(393);
+  position: relative;
   background-color: black;
+  z-index: 400;
 
   &__info {
     height: rem(312);

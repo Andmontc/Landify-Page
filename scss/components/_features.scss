@@ -2,8 +2,9 @@
 
   &__container {
     display: flex;
-    height: rem(960);
-    margin: auto rem(165);
+    position: relative;
+    margin: 0 rem(165);
+    margin-bottom: 164px;
 
     @include display (phone) {
       width: auto;
@@ -13,7 +14,6 @@
 
     @include display (tablet) {
       margin: 40px;
-      height: rem(600);
       width: auto;
     }
 
@@ -28,7 +28,10 @@
     }
 
     .iphone {
-      margin-top: 10.625rem;
+      position: absolute;
+      top: 170px;
+      right: 63px;
+
 
       @include display (phone) {
         display: none;
@@ -47,7 +50,6 @@
     margin-right: 6rem;
     padding-right: 2rem;
     width: rem(538);
-    height: rem(512);
 
     @include display (phone) {
       width: auto;
@@ -65,12 +67,10 @@
   &__texts {
     display: flex;
     flex-direction: column;
-    height: 80%;
     width: 100%;
 
     &-headline {
       display: flex;
-      height: 100%;
       align-items: center;
 
       @include display (phone) {
@@ -91,6 +91,8 @@
 
       .text {
         padding-left: 40px;
+        padding-top: 50px;
+        padding-bottom: 11px;
 
         @include display (phone) {
           padding: 0;

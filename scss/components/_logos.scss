@@ -2,9 +2,10 @@
 
   &__container {
     display: flex;
+    width: 100%;
     align-items: center;
     margin: auto rem(165);
-    height: rem(308);
+    padding-bottom: 86px;
 
     @include display (phone) {
       width: auto;
@@ -12,14 +13,16 @@
     }
 
     @include display (tablet) {
-      display: flex;
       justify-content: space-around;
       margin: 0;
     }
 
     &-text {
+      width: 24%;
+
       @include display(phone) {
         padding-left: 23px;
+        width: auto;
       }
 
       @include display (tablet) {
@@ -31,6 +34,8 @@
     }
 
     &-title {
+      width: 100%;
+      flex-wrap: wrap;
       font-weight: 800;
       font-size: 48px;
       line-height: 64px;
@@ -53,6 +58,7 @@
 
     &-companies {
       display: flex;
+      width: 53%;
       flex-wrap: wrap;
       justify-content: center;
 

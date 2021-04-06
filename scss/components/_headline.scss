@@ -1,12 +1,9 @@
 .headline {
   display: flex;
-  height: rem(800);
   align-items: center;
   justify-content: center;
-
-  @include display (tablet) {
-    height: rem(500);
-  }
+  padding-top: 100px;
+  padding-bottom: 250px;
 
   &__container {
     display: flex;
@@ -33,7 +30,6 @@
       display: flex;
       flex-direction: column;
       width: rem(444);
-      height: rem(308);
 
       @include display (phone) {
         width: auto;
@@ -75,7 +71,7 @@
     
 
     &-phone {
-      height: rem(640);
+      
 
       @include display (phone) {
         display: none;

@@ -114,12 +114,21 @@
         background-color: $main-background;
       }
 
+      &:nth-child(3) {
+        background-color: $main-background;
+      }
+
       .login {
         color: $main-background;
         text-decoration: none;
       }
 
       .sign {
+        color: $white;
+        text-decoration: none;
+      }
+
+      .edit {
         color: $white;
         text-decoration: none;
       }

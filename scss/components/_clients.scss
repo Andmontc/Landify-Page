@@ -1,14 +1,9 @@
 .clients {
-  height: rem(610);
   background-color: $main-background;
   margin: auto;
 
-  @include display (phone) {
-    height: rem(510);
-  }
 
   @include display (tablet) {
-    height: rem(600);
     width: auto;
   }
 
@@ -43,7 +38,6 @@
   &__main {
     display: flex;
     flex-direction: column;
-    height: rem(316);
 
     @include display (phone) {
       margin: 0;
@@ -56,7 +50,6 @@
 
   &__text {
     width: rem(730);
-    height: rem(64);
     margin: 80px 0px 32px 120px;
 
     @include display (phone) {
@@ -133,7 +126,6 @@
   &__people {
     display: none;
     width: rem(1200);
-    height: rem(210);
     justify-content: space-evenly;
     margin: 30px 54px;
 
@@ -191,7 +183,6 @@
       border-radius: 10px;
       width: rem(540);
       background-color: $white;
-      height: rem(220);
       margin-right: 30px;
       justify-content: center;
       flex-direction: column;
@@ -225,7 +216,6 @@
     display: flex;
     flex-wrap: wrap;
     width: rem(320);
-    height: 56px;
 
     @include display (phone) {
       padding-top: 20px;

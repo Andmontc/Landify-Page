@@ -1,5 +1,8 @@
 const $menu = document.querySelector('.js-header-menu');
 const $head = document.querySelector('.js-header');
+const $edit = document.querySelector('.js-button');
+const $editButton = document.querySelector('.js-edit');
+const $editText = document.querySelector('.js-text-edit');
 const $landing = document.querySelector('.js-landing');
 const $logo = document.querySelector('.js-logos');
 const $feat = document.querySelector('.js-features');
@@ -8,7 +11,22 @@ const $stats = document.querySelector('.js-statistics');
 const $hline = document.querySelector('.js-headline');
 const $member = document.querySelector('.js-member');
 const $foot = document.querySelector('.js-footer');
+var $editable = document.querySelectorAll('.js-editable');
 const sticky = $head.offsetTop;
+let userVersion = [];
+let i = 0;
+
+var data = localStorage.getItem("edit");
+data = JSON.parse(data);
+
+$editButton.style.display="none";
+
+if (data) {
+  Array.from($editable).forEach(function(item){
+    item.innerHTML = data[i];
+    i++;
+  })
+}
 
 window.onscroll = handleStickyScroll
 
@@ -62,4 +80,45 @@ function showSlides() {
   face[faceIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " on";
   setTimeout(showSlides, 2000);
+}
+
+hotkeys('ctrl+k, cmd+k', function (event, handler){
+  switch (handler.key) {
+    case 'ctrl+k':
+      $edit.classList.toggle('hidden')
+      $editButton.style.display="block";
+      $editText.style.display="flex";
+      Array.from($editable).forEach(function(item){
+        item.style.border="dashed";
+        item.contentEditable = true;
+      })
+      break;
+    case 'cmd+k':
+      $edit.classList.toggle('hidden')
+      $editButton.style.display="block";
+      $editText.style.display="flex";
+      Array.from($editable).forEach(function(item){
+        item.style.border="dashed";
+        item.contentEditable = true;
+      })
+      break;
+
+    default: 
+      document.body.contentEditable = false;
+  }
+});
+
+function editSave () {
+  $edit.classList.remove('hidden')
+  $editButton.style.display="none";
+  $editText.style.display="none";
+  Array.from($editable).forEach(function(item){
+    userVersion.push(item.textContent);
+    item.style.border="none";
+    item.contentEditable = false;
+  })
+
+  userVersion.forEach(function(user, index) {
+    localStorage.setItem("edit", JSON.stringify(userVersion));
+  })
 }

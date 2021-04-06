@@ -5,13 +5,9 @@
     display: flex;
     margin: auto rem(165);
     align-items: center;
-    height: rem(794);
+    padding-top: 77px;
 
     @include display(phone) {
-      height: rem(280);
-      margin: auto;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
     }
 
@@ -21,12 +17,14 @@
   }
 
   &__text {
-    flex-basis: 49%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
     @include display(phone) {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      width: auto;
+      margin: auto;
     }
 
     @include display(tablet) {
@@ -35,6 +33,7 @@
     }
     
     &-title {
+      width: 100%;
       font-weight: 800;
       font-size: 66px;
       line-height: 98px;
@@ -43,10 +42,13 @@
       @include display(phone) {
         font-size: 28px;
         line-height: 40px;
+        text-align: center;
+        padding-right: 0px;
       }
     }
 
     &-data {
+      width: 100%;
       font-weight: 300;
       font-size: 18px;
       line-height: 32px;
@@ -54,7 +56,7 @@
 
       @include display(phone) {
         line-height: 20px;
-        padding: 10px 45px;
+        padding: 10px 0px;
         text-align: center;
       }
     }
@@ -77,6 +79,12 @@
         margin-top: 20px;
       }
     }
+
+    &-edit {
+      justify-content: center;
+      font-weight: 400;
+      font-size: 46px;
+    }
   }
 
   &__img {
@@ -87,12 +95,12 @@
     @include display (phone) {
       display: none;
     }
-
-    &-circle {
-
-      @include display(tablet) {
-        width: 100%;
-      }
+    
+    @include display(tablet) {
+      width: 100%;
+      position: relative;
+      margin-right: 0;
+      overflow: hidden;
     }
 
     &-dash {
